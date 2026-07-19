@@ -176,7 +176,7 @@ main {
 
 main {
   width: 100%;
-  max-width: 1060px;
+  max-width: 1360px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -208,7 +208,7 @@ header .subtitle {
 /* ----- tool cards ----- */
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   width: 100%;
 }
@@ -331,16 +331,13 @@ footer a:hover {
 }
 
 /* ----- responsive ----- */
-@media (max-width: 940px) {
+/* four cards: 4-across on wide screens, a balanced 2×2 below that,
+   stacked on phones */
+@media (max-width: 1180px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
-  }
-  /* keep the third card from stretching awkwardly across both columns */
-  .cards .card:last-child {
-    grid-column: 1 / -1;
-    max-width: calc(50% - 10px);
+    max-width: 720px;
     margin: 0 auto;
-    width: 100%;
   }
 }
 @media (max-width: 640px) {
@@ -352,9 +349,6 @@ footer a:hover {
   }
   .cards {
     grid-template-columns: 1fr;
-  }
-  .cards .card:last-child {
-    grid-column: auto;
     max-width: none;
   }
 }

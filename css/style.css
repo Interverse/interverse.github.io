@@ -46,8 +46,132 @@ body {
   padding: 40px 20px;
   /* subtle depth behind the centered content */
   background-image:
-    radial-gradient(1000px 500px at 50% -10%, rgba(45, 108, 223, 0.08), transparent 70%),
-    radial-gradient(800px 400px at 50% 110%, rgba(126, 200, 255, 0.04), transparent 70%);
+    radial-gradient(1000px 500px at 50% -10%, rgba(45, 108, 223, 0.14), transparent 70%),
+    radial-gradient(800px 400px at 50% 110%, rgba(126, 200, 255, 0.07), transparent 70%);
+}
+
+/* ----- themed background layer ----- */
+/* Everything lives in one fixed, non-interactive layer behind the content.
+   Animations only touch transform/opacity (compositor-friendly), so the
+   page stays lightweight even on GitHub Pages + mobile. */
+.bg {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+main {
+  position: relative;
+  z-index: 1;
+}
+
+/* faint blueprint grid, faded toward the edges so it never competes with
+   the cards */
+.bg-grid {
+  position: absolute;
+  inset: 0;
+  /* minor lines every 56px, brighter major lines every 4th cell */
+  background-image:
+    linear-gradient(rgba(126, 200, 255, 0.16) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(126, 200, 255, 0.16) 1px, transparent 1px),
+    linear-gradient(rgba(126, 200, 255, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(126, 200, 255, 0.09) 1px, transparent 1px);
+  background-size: 224px 224px, 224px 224px, 56px 56px, 56px 56px;
+  -webkit-mask-image: radial-gradient(ellipse 85% 80% at 50% 45%, #000 35%, transparent 100%);
+  mask-image: radial-gradient(ellipse 85% 80% at 50% 45%, #000 35%, transparent 100%);
+}
+
+/* two large soft glows drifting very slowly */
+.bg-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  will-change: transform;
+}
+.bg-glow-a {
+  width: 560px;
+  height: 560px;
+  left: -140px;
+  top: -160px;
+  background: radial-gradient(circle, rgba(45, 108, 223, 0.28), transparent 65%);
+  animation: glow-drift-a 26s ease-in-out infinite alternate;
+}
+.bg-glow-b {
+  width: 500px;
+  height: 500px;
+  right: -120px;
+  bottom: -140px;
+  background: radial-gradient(circle, rgba(126, 200, 255, 0.18), transparent 65%);
+  animation: glow-drift-b 32s ease-in-out infinite alternate;
+}
+@keyframes glow-drift-a {
+  from { transform: translate(0, 0); }
+  to   { transform: translate(90px, 60px); }
+}
+@keyframes glow-drift-b {
+  from { transform: translate(0, 0); }
+  to   { transform: translate(-80px, -50px); }
+}
+
+/* floating wireframe primitives (cube / triangle / sphere — the shapes the
+   toolkit generates). Kept at very low opacity near the viewport edges. */
+.bg-shape {
+  position: absolute;
+  stroke: #7ec8ff;
+  fill: none;
+  stroke-width: 1.5;
+  opacity: 0.18;
+  filter: drop-shadow(0 0 6px rgba(126, 200, 255, 0.35));
+  will-change: transform;
+  animation: shape-float 18s ease-in-out infinite alternate;
+}
+.bg-cube {
+  width: 130px;
+  left: 6%;
+  top: 16%;
+  animation-duration: 22s;
+}
+.bg-tri {
+  width: 90px;
+  right: 9%;
+  top: 22%;
+  animation-duration: 17s;
+  animation-delay: -6s;
+}
+.bg-sphere {
+  width: 110px;
+  left: 12%;
+  bottom: 12%;
+  animation-duration: 26s;
+  animation-delay: -11s;
+}
+.bg-cube2 {
+  width: 70px;
+  right: 15%;
+  bottom: 18%;
+  animation-duration: 19s;
+  animation-delay: -3s;
+}
+@keyframes shape-float {
+  from { transform: translateY(-14px) rotate(-4deg); }
+  to   { transform: translateY(14px) rotate(5deg); }
+}
+
+/* accessibility: no motion for users who ask for none */
+@media (prefers-reduced-motion: reduce) {
+  .bg-glow,
+  .bg-shape {
+    animation: none;
+  }
+}
+
+/* small screens: the cards fill most of the viewport — hide the floating
+   shapes so nothing peeks through gaps, keep the grid + glows */
+@media (max-width: 640px) {
+  .bg-shape {
+    display: none;
+  }
 }
 
 main {

@@ -5,9 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kyvern's Miliastra Toolkit</title>
   <meta name="description" content="A suite of free browser tools for creating, editing, and converting Miliastra Wonderland assets." />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css?v=3" />
 </head>
 <body>
+  <!-- decorative themed background (pure CSS/SVG, aria-hidden) -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-a"></div>
+    <div class="bg-glow bg-glow-b"></div>
+    <!-- floating wireframe primitives — the shapes the toolkit builds with -->
+    <svg class="bg-shape bg-cube" viewBox="0 0 100 100">
+      <path d="M50 8 88 30v40L50 92 12 70V30L50 8z"/>
+      <path d="M50 8v42m0 0 38-20M50 50 12 30m38 20v42"/>
+    </svg>
+    <svg class="bg-shape bg-tri" viewBox="0 0 100 100">
+      <path d="M14 86 86 86 14 14z"/>
+    </svg>
+    <svg class="bg-shape bg-sphere" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="40"/>
+      <ellipse cx="50" cy="50" rx="40" ry="14"/>
+      <ellipse cx="50" cy="50" rx="14" ry="40"/>
+    </svg>
+    <svg class="bg-shape bg-cube2" viewBox="0 0 100 100">
+      <path d="M50 8 88 30v40L50 92 12 70V30L50 8z"/>
+      <path d="M50 8v42m0 0 38-20M50 50 12 30m38 20v42"/>
+    </svg>
+  </div>
+
   <main>
     <header>
       <h1>Kyvern's <span class="accent">Miliastra Toolkit</span></h1>

@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build output
+dist/
+build/
+
+# Env / secrets
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+
+# Claude
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+
+# Logs
+*.log
+npm-debug.log*
+
+#docs
+docs/
+
+# Reference files
+reference/

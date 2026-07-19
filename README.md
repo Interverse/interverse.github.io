@@ -17,8 +17,6 @@ Hosted at **https://interverse.github.io**.
 ```
 index.html       the landing page (header + three tool cards)
 css/style.css    homepage styles, matching the shared toolkit design language
-reference/css/   reference stylesheet from the toolkit sites (not served)
-README-*.md      README copies of the individual tools, used as reference
 ```
 
 Static HTML/CSS only — no build step, no dependencies. Open `index.html`

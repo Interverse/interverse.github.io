@@ -30,10 +30,24 @@ body {
 
 body {
   font-family:
-    "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial,
-    "Noto Sans", "PingFang SC", "Hiragino Sans", "Microsoft YaHei",
-    "Microsoft JhengHei", "Yu Gothic UI", Meiryo, "Malgun Gothic",
-    "Apple SD Gothic Neo", "Leelawadee UI", Thonburi, "Noto Sans Thai",
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    "PingFang SC",
+    "Hiragino Sans",
+    "Microsoft YaHei",
+    "Microsoft JhengHei",
+    "Yu Gothic UI",
+    Meiryo,
+    "Malgun Gothic",
+    "Apple SD Gothic Neo",
+    "Leelawadee UI",
+    Thonburi,
+    "Noto Sans Thai",
     sans-serif;
   background: #14161a;
   color: #d8dbe0;
@@ -63,8 +77,16 @@ body {
   /* the soft tint gradients — fixed to the viewport (not the document), so
      they cover the visible screen at all times, including elastic overscroll */
   background-image:
-    radial-gradient(1000px 500px at 50% -10%, rgba(45, 108, 223, 0.14), transparent 70%),
-    radial-gradient(800px 400px at 50% 110%, rgba(126, 200, 255, 0.07), transparent 70%);
+    radial-gradient(
+      1000px 500px at 50% -10%,
+      rgba(45, 108, 223, 0.14),
+      transparent 70%
+    ),
+    radial-gradient(
+      800px 400px at 50% 110%,
+      rgba(126, 200, 255, 0.07),
+      transparent 70%
+    );
 }
 main {
   position: relative;
@@ -82,9 +104,21 @@ main {
     linear-gradient(90deg, rgba(126, 200, 255, 0.16) 1px, transparent 1px),
     linear-gradient(rgba(126, 200, 255, 0.09) 1px, transparent 1px),
     linear-gradient(90deg, rgba(126, 200, 255, 0.09) 1px, transparent 1px);
-  background-size: 224px 224px, 224px 224px, 56px 56px, 56px 56px;
-  -webkit-mask-image: radial-gradient(ellipse 85% 80% at 50% 45%, #000 35%, transparent 100%);
-  mask-image: radial-gradient(ellipse 85% 80% at 50% 45%, #000 35%, transparent 100%);
+  background-size:
+    224px 224px,
+    224px 224px,
+    56px 56px,
+    56px 56px;
+  -webkit-mask-image: radial-gradient(
+    ellipse 85% 80% at 50% 45%,
+    #000 35%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 85% 80% at 50% 45%,
+    #000 35%,
+    transparent 100%
+  );
 }
 
 /* two large soft glows drifting very slowly */
@@ -99,7 +133,11 @@ main {
   height: 560px;
   left: -140px;
   top: -160px;
-  background: radial-gradient(circle, rgba(45, 108, 223, 0.28), transparent 65%);
+  background: radial-gradient(
+    circle,
+    rgba(45, 108, 223, 0.28),
+    transparent 65%
+  );
   animation: glow-drift-a 26s ease-in-out infinite alternate;
 }
 .bg-glow-b {
@@ -107,16 +145,28 @@ main {
   height: 500px;
   right: -120px;
   bottom: -140px;
-  background: radial-gradient(circle, rgba(126, 200, 255, 0.18), transparent 65%);
+  background: radial-gradient(
+    circle,
+    rgba(126, 200, 255, 0.18),
+    transparent 65%
+  );
   animation: glow-drift-b 32s ease-in-out infinite alternate;
 }
 @keyframes glow-drift-a {
-  from { transform: translate(0, 0); }
-  to   { transform: translate(90px, 60px); }
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(90px, 60px);
+  }
 }
 @keyframes glow-drift-b {
-  from { transform: translate(0, 0); }
-  to   { transform: translate(-80px, -50px); }
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-80px, -50px);
+  }
 }
 
 /* floating wireframe primitives (cube / triangle / sphere — the shapes the
@@ -159,8 +209,12 @@ main {
   animation-delay: -3s;
 }
 @keyframes shape-float {
-  from { transform: translateY(-14px) rotate(-4deg); }
-  to   { transform: translateY(14px) rotate(5deg); }
+  from {
+    transform: translateY(-14px) rotate(-4deg);
+  }
+  to {
+    transform: translateY(14px) rotate(5deg);
+  }
 }
 
 /* accessibility: no motion for users who ask for none */
@@ -212,14 +266,18 @@ header .subtitle {
 
 /* ----- tool cards ----- */
 .cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   width: 100%;
 }
 
 .card {
   display: flex;
+  flex: 0 0 calc((100% - 40px) / 3);
+  max-width: 400px;
+  min-width: 280px;
   flex-direction: column;
   background: #1b1e24;
   border: 1px solid #2a2e36;
@@ -228,14 +286,17 @@ header .subtitle {
   text-decoration: none;
   color: inherit;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
-  transition: transform 0.18s ease, box-shadow 0.18s ease,
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
     border-color 0.18s ease;
 }
 .card:hover,
 .card:focus-visible {
   transform: translateY(-4px);
   border-color: #2d6cdf;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45),
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.45),
     0 0 0 1px rgba(45, 108, 223, 0.35);
   outline: none;
 }

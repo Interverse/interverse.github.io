@@ -31,7 +31,13 @@
     es: "es", fr: "fr", ru: "ru", th: "th", vi: "vi",
     de: "de", id: "id", pt: "pt", tr: "tr", it: "it",
   };
-  var STORAGE_KEY = "miliastra-toolkit-lang";
+  // Shared across every Miliastra Toolkit site on this origin (all tools are
+  // hosted under interverse.github.io, so they see the same localStorage):
+  // pick a language on any site and every other site follows.
+  // Spec: docs/language-sync.md
+  var STORAGE_KEY = "miliastra-lang";
+  // this site's pre-sync key, migrated once then abandoned
+  var LEGACY_KEY = "miliastra-toolkit-lang";
 
   var locales = {};
   var current = "en";
@@ -48,6 +54,13 @@
     try {
       var saved = localStorage.getItem(STORAGE_KEY);
       if (saved && isValid(saved)) return saved;
+      // one-time migration from this site's pre-sync key
+      var legacy = localStorage.getItem(LEGACY_KEY);
+      if (legacy && isValid(legacy)) {
+        localStorage.setItem(STORAGE_KEY, legacy);
+        localStorage.removeItem(LEGACY_KEY);
+        return legacy;
+      }
     } catch (e) { /* storage unavailable — fall through to detection */ }
     var candidates = navigator.languages || [navigator.language || "en"];
     for (var i = 0; i < candidates.length; i++) {
@@ -168,6 +181,14 @@
     loadLocale(current).then(function () {
       apply();
       updateSelector();
+    });
+    // live sync: another toolkit site (or another tab) changed the shared
+    // language — follow it without requiring a reload
+    window.addEventListener("storage", function (e) {
+      if (e.key === STORAGE_KEY && e.newValue && isValid(e.newValue) &&
+          e.newValue !== current) {
+        setLang(e.newValue);
+      }
     });
   }
 

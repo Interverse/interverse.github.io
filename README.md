@@ -36,6 +36,10 @@ disambiguation), and the choice persisted in localStorage. Adding a
 language = adding one `js/locales/<code>.js` file plus one row to `LANGS`
 in `js/i18n.js`.
 
+The language choice is **shared across all toolkit sites** on this origin
+via the `miliastra-lang` localStorage key — pick a language on any site and
+the others follow.
+
 ## Disclaimer
 
 This is an unofficial, fan-made toolkit. Not affiliated with or endorsed by

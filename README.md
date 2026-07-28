@@ -9,19 +9,32 @@ Hosted at **https://interverse.github.io**.
 | Tool | Link |
 |---|---|
 | 3D Models & Sprites to `.gia` | https://interverse.github.io/miliastra-3d-model-to-gia |
-| Image to `.gia` Pixel Builder | https://interverse.github.io/miliastra-image-to-gia/ |
+| Image to Primitive Shapes UI `.gia` | https://interverse.github.io/miliastra-image-to-primitive-shape-ui/ |
+| Pixel Image to UI `.gia` | https://interverse.github.io/miliastra-image-to-gia/ |
 | `.gia` Decoration Editor | https://interverse.github.io/miliastra-gia-decoration-splitter/ |
 | Beyond ↔ Classic Asset Converter | https://interverse.github.io/miliastra-asset-mode-converter/ |
 
 ## Layout
 
 ```
-index.html       the landing page (header + three tool cards)
+index.html       the landing page (header + tool cards)
 css/style.css    homepage styles, matching the shared toolkit design language
+js/i18n.js       localization system + custom language selector
+js/locales/      one flat dictionary per language (en.js is the canonical set)
 ```
 
-Static HTML/CSS only — no build step, no dependencies. Open `index.html`
+Static HTML/CSS/JS only — no build step, no dependencies. Open `index.html`
 directly in a browser, or serve the folder with any static file server.
+
+## Localization
+
+The homepage is localized into the same 15 languages as the rest of the
+toolkit (the 14 officially supported by Genshin Impact plus Italian). Same
+pattern as the other sites: `data-i18n` bindings, English as the fallback
+for every key, browser-language auto-detection (including zh-Hans/zh-Hant
+disambiguation), and the choice persisted in localStorage. Adding a
+language = adding one `js/locales/<code>.js` file plus one row to `LANGS`
+in `js/i18n.js`.
 
 ## Disclaimer
 

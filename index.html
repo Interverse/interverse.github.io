@@ -8,7 +8,7 @@
       name="description"
       content="A suite of free browser tools for creating, editing, and converting Miliastra Wonderland assets."
     />
-    <link rel="stylesheet" href="css/style.css?v=5" />
+    <link rel="stylesheet" href="css/style.css?v=7" />
   </head>
   <body>
     <!-- decorative themed background (pure CSS/SVG, aria-hidden) -->
@@ -35,10 +35,33 @@
       </svg>
     </div>
 
+    <!-- language selector (menu items are built by js/i18n.js) -->
+    <div id="lang-switch">
+      <button
+        id="lang-btn"
+        type="button"
+        aria-haspopup="listbox"
+        aria-expanded="false"
+        data-i18n-title="lang.label"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M3 12h18M12 3a14.4 14.4 0 0 1 0 18M12 3a14.4 14.4 0 0 0 0 18" />
+        </svg>
+        <span id="lang-current">English</span>
+        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m6 9 6 6 6-6" />
+        </svg>
+      </button>
+      <ul id="lang-menu" role="listbox" aria-hidden="true"></ul>
+    </div>
+
     <main>
       <header>
-        <h1>Kyvern's <span class="accent">Miliastra Toolkit</span></h1>
-        <p class="subtitle">
+        <h1 data-i18n="site.title">
+          Kyvern's <span class="accent">Miliastra Toolkit</span>
+        </h1>
+        <p class="subtitle" data-i18n="site.subtitle">
           A suite of free, browser-based tools for creating, editing, and
           converting Miliastra Wonderland assets. Everything runs locally — your
           files never leave your device.
@@ -57,17 +80,19 @@
               <path d="M12 2.5V12m0 0 9-5M12 12 3 7m9 5v9.5" />
             </svg>
           </div>
-          <h2>3D Models &amp; Sprites to <code>.gia</code></h2>
-          <p class="desc">
+          <h2 data-i18n="m3d.title">
+            3D Models &amp; Sprites to <code>.gia</code>
+          </h2>
+          <p class="desc" data-i18n="m3d.desc">
             Turn 3D models and 2D sprites into ready-to-use <code>.gia</code>
             assets.
           </p>
-          <p class="features">
+          <p class="features" data-i18n="m3d.feat">
             Direct, voxel &amp; pixel-perfect modes · full 3D editing suite · 2D
             animation support
           </p>
           <span class="btn"
-            >Open Tool
+            ><span data-i18n="open_tool">Open Tool</span>
             <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
           </span>
         </a>
@@ -83,17 +108,17 @@
               <path d="M10 8h4v8" />
             </svg>
           </div>
-          <h2><code>.gia</code> Decoration Editor</h2>
-          <p class="desc">
+          <h2 data-i18n="editor.title"><code>.gia</code> Decoration Editor</h2>
+          <p class="desc" data-i18n="editor.desc">
             Inspect, split, reorder, and rename the models and decorations
             inside a <code>.gia</code> file.
           </p>
-          <p class="features">
+          <p class="features" data-i18n="editor.feat">
             Split &amp; move decorations between models · drag-and-drop
             reordering
           </p>
           <span class="btn"
-            >Open Tool
+            ><span data-i18n="open_tool">Open Tool</span>
             <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
           </span>
         </a>
@@ -109,16 +134,18 @@
               <path d="M20 16H7m3 4-4-4 4-4" />
             </svg>
           </div>
-          <h2>Beyond &harr; Classic <code>.gia</code> Converter</h2>
-          <p class="desc">
+          <h2 data-i18n="conv.title">
+            Beyond &harr; Classic <code>.gia</code> Converter
+          </h2>
+          <p class="desc" data-i18n="conv.desc">
             Move assets freely between Beyond Mode and Classic Mode with a
             single click.
           </p>
-          <p class="features">
+          <p class="features" data-i18n="conv.feat">
             Automatic mode detection · one-click conversion in either direction
           </p>
           <span class="btn"
-            >Open Tool
+            ><span data-i18n="open_tool">Open Tool</span>
             <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
           </span>
         </a>
@@ -135,16 +162,18 @@
               <circle cx="17.25" cy="17" r="3.5" />
             </svg>
           </div>
-          <h2>Image to Primitive Shapes UI <code>.gia</code></h2>
-          <p class="desc">
+          <h2 data-i18n="prim.title">
+            Image to Primitive Shapes UI <code>.gia</code>
+          </h2>
+          <p class="desc" data-i18n="prim.desc">
             Convert a PNG into a <code>.gia</code> file built from circles,
             squares, or triangles.
           </p>
-          <p class="features">
-            Painterly aesthetic · More efficient shape count
+          <p class="features" data-i18n="prim.feat">
+            Painterly aesthetic · more efficient shape count
           </p>
           <span class="btn"
-            >Open Tool
+            ><span data-i18n="open_tool">Open Tool</span>
             <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
           </span>
         </a>
@@ -161,26 +190,31 @@
               <path d="m3 16.5 5-4.5 4.5 4L16 13l5 4.5" />
             </svg>
           </div>
-          <h2>Pixel Image to UI <code>.gia</code></h2>
-          <p class="desc">
+          <h2 data-i18n="pixel.title">Pixel Image to UI <code>.gia</code></h2>
+          <p class="desc" data-i18n="pixel.desc">
             Convert a PNG into a <code>.gia</code> file built from square UI
             shapes.
           </p>
-          <p class="features">
-            Pixel-perfect · Smart pixel layering · Higher square UI count
+          <p class="features" data-i18n="pixel.feat">
+            Pixel-perfect · smart pixel layering · higher square UI count
           </p>
           <span class="btn"
-            >Open Tool
+            ><span data-i18n="open_tool">Open Tool</span>
             <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
           </span>
         </a>
       </div>
 
       <footer>
-        An unofficial, fan-made toolkit. Not affiliated with or endorsed by
-        HoYoverse. Please follow the game's Terms of Service when using anything
-        created with these tools.
+        <span data-i18n="footer">
+          An unofficial, fan-made toolkit. Not affiliated with or endorsed by
+          HoYoverse. Please follow the game's Terms of Service when using
+          anything created with these tools.
+        </span>
       </footer>
     </main>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/locales/en.js"></script>
   </body>
 </html>

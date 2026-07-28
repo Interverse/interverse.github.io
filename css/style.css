@@ -62,6 +62,121 @@ body {
      fixed .bg layer so overscroll/bounce never reveals untinted areas */
 }
 
+/* Language-specific preferred fonts (html[lang] is set by the i18n system) */
+:lang(zh-Hans) { font-family: "Segoe UI", system-ui, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif; }
+:lang(zh-Hant) { font-family: "Segoe UI", system-ui, "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei", "Noto Sans TC", sans-serif; }
+:lang(ja) { font-family: "Segoe UI", system-ui, "Hiragino Sans", "Yu Gothic UI", Meiryo, "Noto Sans JP", sans-serif; }
+:lang(ko) { font-family: "Segoe UI", system-ui, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+:lang(th) { font-family: "Segoe UI", system-ui, "Leelawadee UI", Thonburi, "Noto Sans Thai", sans-serif; }
+/* Thai stacked diacritics need extra line height to avoid clipping */
+:lang(th) .subtitle,
+:lang(th) .card .desc,
+:lang(th) .card .features,
+:lang(th) footer {
+  line-height: 1.7;
+}
+
+/* ----- language selector ----- */
+#lang-switch {
+  position: fixed;
+  top: 14px;
+  right: 16px;
+  z-index: 40;
+  font-size: 13px;
+}
+#lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 12px;
+  font: inherit;
+  background: rgba(27, 30, 36, 0.92);
+  border: 1px solid #2a2e36;
+  border-radius: 8px;
+  color: #9aa3b0;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+#lang-btn:hover {
+  background: #2a2e36;
+  color: #d8dbe0;
+}
+#lang-btn:focus-visible {
+  outline: 2px solid #2d6cdf;
+  outline-offset: 2px;
+}
+#lang-btn svg {
+  width: 15px;
+  height: 15px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: none;
+}
+#lang-btn .chev {
+  width: 11px;
+  height: 11px;
+  transition: transform 0.15s;
+}
+#lang-switch.open #lang-btn .chev {
+  transform: rotate(180deg);
+}
+#lang-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0; /* right-aligned with the trigger so it never leaves the viewport */
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  min-width: 172px;
+  max-height: min(430px, calc(100vh - 70px));
+  overflow-y: auto;
+  background: #1b1e24;
+  border: 1px solid #3a4150;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateY(-4px);
+  pointer-events: none;
+  transition: opacity 0.14s ease, transform 0.14s ease;
+}
+#lang-switch.open #lang-menu {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+#lang-menu li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 7px 10px;
+  border-radius: 6px;
+  color: #d8dbe0;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.12s;
+}
+#lang-menu li:hover {
+  background: #2a2e36;
+}
+#lang-menu li.active {
+  color: #7ec8ff;
+}
+#lang-menu li.active::after {
+  content: "✓";
+  font-size: 11px;
+}
+@media (prefers-reduced-motion: reduce) {
+  #lang-menu,
+  #lang-btn .chev {
+    transition: none;
+  }
+}
+
 /* ----- themed background layer ----- */
 /* Everything lives in one fixed, non-interactive layer behind the content.
    Animations only touch transform/opacity (compositor-friendly), so the
@@ -406,9 +521,16 @@ footer a:hover {
     margin: 0 auto;
   }
 }
+/* clear space under the fixed language selector so it can never sit on top
+   of the centered page title on narrow screens */
+@media (max-width: 900px) {
+  body {
+    padding-top: 72px;
+  }
+}
 @media (max-width: 640px) {
   body {
-    padding: 32px 16px;
+    padding: 72px 16px 32px;
   }
   header {
     margin-bottom: 32px;

@@ -9,7 +9,7 @@ Hosted at **https://interverse.github.io**.
 | Tool                                | Link                                                                |
 | ----------------------------------- | ------------------------------------------------------------------- |
 | 3D Models & Sprites to `.gia`       | https://interverse.github.io/miliastra-3d-model-to-gia              |
-| `.gia`/`.gil` Decoration Editor     | https://interverse.github.io/miliastra-gia-decoration-splitter/     |
+| `.gia`/`.gil` Decoration Editor     | https://interverse.github.io/miliastra-decoration-splitter/         |
 | Beyond ↔ Classic Asset Converter    | https://interverse.github.io/miliastra-asset-mode-converter/        |
 | Image to Primitive Shapes UI `.gia` | https://interverse.github.io/miliastra-image-to-primitive-shape-ui/ |
 | Image to `.gia` Pixel Builder       | https://interverse.github.io/miliastra-image-to-gia/                |

@@ -14,11 +14,11 @@ registerLocale("tr", {
   "m3d.feat":
     "Doğrudan / voksel / piksel mükemmel modlar · eksiksiz 3D düzenleme araçları · 2D animasyon desteği",
 
-  "editor.title": "<code>.gia</code> Dekorasyon Düzenleyici",
+  "editor.title": "<code>.gia</code>/<code>.gil</code> Dekorasyon Düzenleyici",
   "editor.desc":
-    "Bir <code>.gia</code> dosyasındaki modelleri ve dekorasyonları inceleyin, bölün, yeniden sıralayın ve yeniden adlandırın.",
+    "Bir <code>.gia</code> veya <code>.gil</code> dosyasındaki modelleri, seviyeleri ve dekorasyonları inceleyin, bölün, yeniden sıralayın ve yeniden adlandırın.",
   "editor.feat":
-    "Dekorasyonları modeller arasında bölme ve taşıma · sürükle-bırak ile sıralama",
+    "Model/seviye üzerindeki dekorasyonları bölme · Dekorasyonları modeller arasında taşıma · sürükle-bırak ile sıralama",
 
   "conv.title": "Beyond ↔ Klasik <code>.gia</code> Dönüştürücü",
   "conv.desc":

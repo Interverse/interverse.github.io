@@ -14,11 +14,11 @@ registerLocale("ja", {
   "m3d.feat":
     "ダイレクト / ボクセル / ピクセルパーフェクトモード · 充実の 3D 編集機能 · 2D アニメーション対応",
 
-  "editor.title": "<code>.gia</code> デコレーションエディタ",
+  "editor.title": "<code>.gia</code>/<code>.gil</code> デコレーションエディタ",
   "editor.desc":
-    "<code>.gia</code> ファイル内のモデルとデコレーションを表示・分割・並べ替え・リネームできます。",
+    "<code>.gia</code> や <code>.gil</code> ファイル内のモデル・レベル・デコレーションを表示・分割・並べ替え・リネームできます。",
   "editor.feat":
-    "モデル間でのデコレーション分割・移動 · ドラッグ＆ドロップで並べ替え",
+    "モデル／レベル上でのデコレーション分割 · モデル間でのデコレーション移動 · ドラッグ＆ドロップで並べ替え",
 
   "conv.title": "ビヨンド ↔ クラシック <code>.gia</code> コンバーター",
   "conv.desc":

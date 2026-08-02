@@ -14,10 +14,11 @@ registerLocale("ko", {
   "m3d.feat":
     "다이렉트 / 복셀 / 픽셀 퍼펙트 모드 · 완전한 3D 편집 도구 · 2D 애니메이션 지원",
 
-  "editor.title": "<code>.gia</code> 데코레이션 에디터",
+  "editor.title": "<code>.gia</code>/<code>.gil</code> 데코레이션 에디터",
   "editor.desc":
-    "<code>.gia</code> 파일 안의 모델과 데코레이션을 확인·분할·재정렬·이름 변경할 수 있습니다.",
-  "editor.feat": "모델 간 데코레이션 분할·이동 · 드래그 앤 드롭 정렬",
+    "<code>.gia</code> 또는 <code>.gil</code> 파일 안의 모델·레벨·데코레이션을 확인·분할·재정렬·이름 변경할 수 있습니다.",
+  "editor.feat":
+    "모델/레벨의 데코레이션 분할 · 모델 간 데코레이션 이동 · 드래그 앤 드롭 정렬",
 
   "conv.title": "비욘드 ↔ 기본 모드 <code>.gia</code> 변환기",
   "conv.desc":

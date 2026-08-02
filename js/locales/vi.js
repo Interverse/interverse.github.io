@@ -14,11 +14,11 @@ registerLocale("vi", {
   "m3d.feat":
     "Chế độ trực tiếp / voxel / pixel-perfect · bộ chỉnh sửa 3D đầy đủ · hỗ trợ hoạt ảnh 2D",
 
-  "editor.title": "Trình chỉnh sửa trang trí <code>.gia</code>",
+  "editor.title": "Trình chỉnh sửa trang trí <code>.gia</code>/<code>.gil</code>",
   "editor.desc":
-    "Xem, tách, sắp xếp lại và đổi tên các mô hình cùng trang trí trong tệp <code>.gia</code>.",
+    "Xem, tách, sắp xếp lại và đổi tên các mô hình, màn chơi cùng trang trí trong tệp <code>.gia</code> hoặc <code>.gil</code>.",
   "editor.feat":
-    "Tách &amp; di chuyển trang trí giữa các mô hình · sắp xếp bằng kéo thả",
+    "Tách trang trí trên mô hình/màn chơi · Di chuyển trang trí giữa các mô hình · sắp xếp bằng kéo thả",
 
   "conv.title": "Trình chuyển đổi <code>.gia</code> Beyond ↔ Kinh Điển",
   "conv.desc":

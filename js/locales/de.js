@@ -14,11 +14,11 @@ registerLocale("de", {
   "m3d.feat":
     "Direkt-, Voxel- &amp; Pixel-Perfect-Modus · komplette 3D-Bearbeitung · 2D-Animationen unterstützt",
 
-  "editor.title": "<code>.gia</code>-Dekorationseditor",
+  "editor.title": "<code>.gia</code>/<code>.gil</code>-Dekorationseditor",
   "editor.desc":
-    "Modelle und Dekorationen in einer <code>.gia</code>-Datei ansehen, aufteilen, umsortieren und umbenennen.",
+    "Modelle, Level und Dekorationen in einer <code>.gia</code>- oder <code>.gil</code>-Datei ansehen, aufteilen, umsortieren und umbenennen.",
   "editor.feat":
-    "Dekorationen zwischen Modellen aufteilen &amp; verschieben · Sortieren per Drag &amp; Drop",
+    "Dekorationen auf Modellen/Leveln aufteilen · Dekorationen zwischen Modellen verschieben · Sortieren per Drag &amp; Drop",
 
   "conv.title": "Beyond ↔ Klassisch <code>.gia</code>-Konverter",
   "conv.desc":

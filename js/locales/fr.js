@@ -14,11 +14,11 @@ registerLocale("fr", {
   "m3d.feat":
     "Modes direct, voxel et pixel perfect · suite d'édition 3D complète · animation 2D prise en charge",
 
-  "editor.title": "Éditeur de décorations <code>.gia</code>",
+  "editor.title": "Éditeur de décorations <code>.gia</code>/<code>.gil</code>",
   "editor.desc":
-    "Inspectez, scindez, réorganisez et renommez les modèles et décorations d'un fichier <code>.gia</code>.",
+    "Inspectez, scindez, réorganisez et renommez les modèles, niveaux et décorations d'un fichier <code>.gia</code> ou <code>.gil</code>.",
   "editor.feat":
-    "Scission et déplacement de décorations entre modèles · réorganisation par glisser-déposer",
+    "Scission de décorations sur les modèles/niveaux · Déplacement de décorations entre modèles · réorganisation par glisser-déposer",
 
   "conv.title": "Convertisseur <code>.gia</code> Beyond ↔ Classique",
   "conv.desc":

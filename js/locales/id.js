@@ -14,11 +14,11 @@ registerLocale("id", {
   "m3d.feat":
     "Mode langsung / voxel / pixel-perfect · perangkat penyuntingan 3D lengkap · mendukung animasi 2D",
 
-  "editor.title": "Editor Dekorasi <code>.gia</code>",
+  "editor.title": "Editor Dekorasi <code>.gia</code>/<code>.gil</code>",
   "editor.desc":
-    "Periksa, pisahkan, susun ulang, dan ganti nama model serta dekorasi di dalam file <code>.gia</code>.",
+    "Periksa, pisahkan, susun ulang, dan ganti nama model, level, serta dekorasi di dalam file <code>.gia</code> atau <code>.gil</code>.",
   "editor.feat":
-    "Pisahkan &amp; pindahkan dekorasi antar model · susun ulang dengan seret dan lepas",
+    "Pisahkan dekorasi pada model/level · Pindahkan dekorasi antar model · susun ulang dengan seret dan lepas",
 
   "conv.title": "Konverter <code>.gia</code> Beyond ↔ Klasik",
   "conv.desc":

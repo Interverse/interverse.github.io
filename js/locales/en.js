@@ -14,11 +14,11 @@ registerLocale("en", {
   "m3d.feat":
     "Direct, voxel &amp; pixel-perfect modes · full 3D editing suite · 2D animation support",
 
-  "editor.title": "<code>.gia</code> Decoration Editor",
+  "editor.title": "<code>.gia</code>/<code>.gil</code> Decoration Editor",
   "editor.desc":
-    "Inspect, split, reorder, and rename the models and decorations inside a <code>.gia</code> file.",
+    "Inspect, split, reorder, and rename the models, levels, and decorations inside a <code>.gia</code> or <code>.gil</code> file.",
   "editor.feat":
-    "Split &amp; move decorations between models · drag-and-drop reordering",
+    "Split decorations on models/levels · Move decorations between models · drag-and-drop reordering",
 
   "conv.title": "Beyond &harr; Classic <code>.gia</code> Converter",
   "conv.desc":

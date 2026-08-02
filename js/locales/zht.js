@@ -12,9 +12,10 @@ registerLocale("zht", {
   "m3d.desc": "將 3D 模型和 2D 精靈圖轉換為可直接使用的 <code>.gia</code> 資產。",
   "m3d.feat": "直接 / 體素 / 像素完美模式 · 完整 3D 編輯套件 · 支援 2D 動畫",
 
-  "editor.title": "<code>.gia</code> 裝飾編輯器",
-  "editor.desc": "檢視、拆分、重排並重新命名 <code>.gia</code> 檔案中的模型與裝飾。",
-  "editor.feat": "在模型間拆分和移動裝飾 · 拖放排序",
+  "editor.title": "<code>.gia</code>/<code>.gil</code> 裝飾編輯器",
+  "editor.desc":
+    "檢視、拆分、重排並重新命名 <code>.gia</code> 或 <code>.gil</code> 檔案中的模型、關卡與裝飾。",
+  "editor.feat": "在模型/關卡上拆分裝飾 · 在模型間移動裝飾 · 拖放排序",
 
   "conv.title": "超限 ↔ 經典 <code>.gia</code> 轉換器",
   "conv.desc": "一鍵在超限模式與經典模式之間自由轉換資產。",

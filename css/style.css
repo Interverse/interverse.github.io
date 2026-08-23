@@ -512,8 +512,7 @@ footer a:hover {
 }
 
 /* ----- responsive ----- */
-/* four cards: 4-across on wide screens, a balanced 2×2 below that,
-   stacked on phones */
+/* cards balance into rows on narrower screens and stack on phones */
 @media (max-width: 1180px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);

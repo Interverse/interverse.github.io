@@ -35,4 +35,10 @@ registerLocale("en", {
   "pixel.desc":
     "Convert a PNG into a <code>.gia</code> file built from square UI shapes.",
   "pixel.feat": "Pixel-perfect · smart pixel layering · higher square UI count",
+
+  "ease.title": "Ease Lab",
+  "ease.desc":
+    "Explore easing curves and build multi-point motion in a visual editor.",
+  "ease.feat":
+    "Live previews · independent transform controls · timeline playback",
 });

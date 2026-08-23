@@ -13,6 +13,7 @@ Hosted at **https://interverse.github.io**.
 | Beyond ↔ Classic Asset Converter    | https://interverse.github.io/miliastra-asset-mode-converter/        |
 | Image to Primitive Shapes UI `.gia` | https://interverse.github.io/miliastra-image-to-primitive-shape-ui/ |
 | Image to `.gia` Pixel Builder       | https://interverse.github.io/miliastra-image-to-gia/                |
+| Ease Lab                            | https://interverse.github.io/easelab/                               |
 
 ## Layout
 

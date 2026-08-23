@@ -28,4 +28,8 @@ registerLocale("zht", {
   "pixel.title": "像素圖轉 UI <code>.gia</code>",
   "pixel.desc": "將 PNG 轉換為由方形 UI 元件構成的 <code>.gia</code> 檔案。",
   "pixel.feat": "像素級還原 · 智慧像素分層 · 方形 UI 數量較多",
+
+  "ease.title": "緩動實驗室",
+  "ease.desc": "探索緩動曲線，並在視覺化編輯器中建立多節點動畫。",
+  "ease.feat": "即時預覽 · 獨立變換控制 · 時間軸播放",
 });

@@ -34,4 +34,10 @@ registerLocale("ko", {
   "pixel.desc":
     "PNG를 정사각형 UI 요소로 구성된 <code>.gia</code> 파일로 변환합니다.",
   "pixel.feat": "픽셀 퍼펙트 · 스마트 픽셀 레이어링 · 사각형 UI 수는 많음",
+
+  "ease.title": "이징 랩",
+  "ease.desc":
+    "이징 곡선을 탐색하고 비주얼 편집기에서 다중 지점 모션을 제작하세요.",
+  "ease.feat":
+    "실시간 미리보기 · 독립적인 변환 제어 · 타임라인 재생",
 });

@@ -36,4 +36,10 @@ registerLocale("fr", {
     "Convertit un PNG en fichier <code>.gia</code> composé d'éléments d'UI carrés.",
   "pixel.feat":
     "Pixel perfect · superposition intelligente des pixels · nombre d'UI carrées plus élevé",
+
+  "ease.title": "Laboratoire d’interpolation",
+  "ease.desc":
+    "Explorez les courbes d’accélération et créez des mouvements multipoints dans un éditeur visuel.",
+  "ease.feat":
+    "Aperçus en direct · contrôles de transformation indépendants · lecture sur la chronologie",
 });

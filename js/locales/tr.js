@@ -35,4 +35,10 @@ registerLocale("tr", {
     "Bir PNG'yi kare UI öğelerinden oluşan bir <code>.gia</code> dosyasına dönüştürür.",
   "pixel.feat":
     "Piksel mükemmelliği · akıllı piksel katmanları · daha fazla kare UI öğesi",
+
+  "ease.title": "Yumuşatma Laboratuvarı",
+  "ease.desc":
+    "Yumuşatma eğrilerini keşfedin ve görsel bir düzenleyicide çok noktalı hareketler oluşturun.",
+  "ease.feat":
+    "Canlı önizlemeler · bağımsız dönüşüm kontrolleri · zaman çizelgesi oynatma",
 });

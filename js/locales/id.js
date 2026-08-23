@@ -35,4 +35,10 @@ registerLocale("id", {
     "Ubah PNG menjadi file <code>.gia</code> yang tersusun dari elemen UI persegi.",
   "pixel.feat":
     "Pixel-perfect · pelapisan piksel cerdas · jumlah UI persegi lebih banyak",
+
+  "ease.title": "Lab Easing",
+  "ease.desc":
+    "Jelajahi kurva easing dan buat gerakan multi-titik dalam editor visual.",
+  "ease.feat":
+    "Pratinjau langsung · kontrol transformasi independen · pemutaran linimasa",
 });

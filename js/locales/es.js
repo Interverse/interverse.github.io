@@ -36,4 +36,10 @@ registerLocale("es", {
     "Convierte un PNG en un archivo <code>.gia</code> compuesto por elementos de UI cuadrados.",
   "pixel.feat":
     "Píxel perfecto · capas de píxeles inteligentes · mayor número de UI cuadradas",
+
+  "ease.title": "Laboratorio de suavizado",
+  "ease.desc":
+    "Explora curvas de aceleración y crea movimientos de múltiples puntos en un editor visual.",
+  "ease.feat":
+    "Vistas previas en tiempo real · controles de transformación independientes · reproducción en la línea de tiempo",
 });

@@ -35,4 +35,10 @@ registerLocale("vi", {
     "Chuyển PNG thành tệp <code>.gia</code> tạo từ các phần tử UI hình vuông.",
   "pixel.feat":
     "Pixel-perfect · xếp lớp pixel thông minh · số lượng UI vuông nhiều hơn",
+
+  "ease.title": "Phòng lab chuyển động",
+  "ease.desc":
+    "Khám phá các đường cong chuyển động và tạo chuyển động đa điểm trong trình chỉnh sửa trực quan.",
+  "ease.feat":
+    "Xem trước trực tiếp · điều khiển biến đổi độc lập · phát trên dòng thời gian",
 });

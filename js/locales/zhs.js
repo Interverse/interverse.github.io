@@ -28,4 +28,8 @@ registerLocale("zhs", {
   "pixel.title": "像素图转 UI <code>.gia</code>",
   "pixel.desc": "将 PNG 转换为由方形 UI 元素构成的 <code>.gia</code> 文件。",
   "pixel.feat": "像素级还原 · 智能像素分层 · 方形 UI 数量较多",
+
+  "ease.title": "缓动实验室",
+  "ease.desc": "探索缓动曲线，并在可视化编辑器中创建多节点动画。",
+  "ease.feat": "实时预览 · 独立变换控制 · 时间轴播放",
 });

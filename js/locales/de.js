@@ -36,4 +36,10 @@ registerLocale("de", {
     "Wandelt ein PNG in eine <code>.gia</code>-Datei aus quadratischen UI-Elementen um.",
   "pixel.feat":
     "Pixel-perfekt · intelligente Pixel-Ebenen · mehr quadratische UI-Elemente",
+
+  "ease.title": "Easing-Labor",
+  "ease.desc":
+    "Erkunden Sie Beschleunigungskurven und erstellen Sie mehrpunktige Bewegungsabläufe in einem visuellen Editor.",
+  "ease.feat":
+    "Live-Vorschauen · unabhängige Transformationssteuerung · Zeitleistenwiedergabe",
 });

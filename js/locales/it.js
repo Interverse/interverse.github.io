@@ -36,4 +36,10 @@ registerLocale("it", {
     "Converte un PNG in un file <code>.gia</code> composto da elementi UI quadrati.",
   "pixel.feat":
     "Pixel perfect · stratificazione intelligente dei pixel · più elementi UI quadrati",
+
+  "ease.title": "Laboratorio di interpolazione",
+  "ease.desc":
+    "Esplora le curve di interpolazione e crea movimenti multipunto in un editor visuale.",
+  "ease.feat":
+    "Anteprime in tempo reale · controlli di trasformazione indipendenti · riproduzione della timeline",
 });

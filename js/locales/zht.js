@@ -32,4 +32,10 @@ registerLocale("zht", {
   "ease.title": "緩動實驗室",
   "ease.desc": "探索緩動曲線，並在視覺化編輯器中建立多節點動畫。",
   "ease.feat": "即時預覽 · 獨立變換控制 · 時間軸播放",
+
+  "anim.title": "Miliastra Animator",
+  "anim.desc":
+    "為 <code>.gia</code> 物件綁定骨骼並製作動畫，預覽運動效果，匯出可在遊戲中使用的動畫。",
+  "anim.feat":
+    "骨骼與 IK · 關鍵影格編輯 · 動畫匯入與重定向",
 });

@@ -41,4 +41,10 @@ registerLocale("tr", {
     "Yumuşatma eğrilerini keşfedin ve görsel bir düzenleyicide çok noktalı hareketler oluşturun.",
   "ease.feat":
     "Canlı önizlemeler · bağımsız dönüşüm kontrolleri · zaman çizelgesi oynatma",
+
+  "anim.title": "Miliastra Animator",
+  "anim.desc":
+    "<code>.gia</code> nesnelerini rigleyip canlandırın, hareketlerini önizleyin ve animasyonları oyunda kullanmak üzere dışa aktarın.",
+  "anim.feat":
+    "Kemikler ve IK · anahtar kare düzenleme · animasyon içe aktarma ve yeniden hedefleme",
 });

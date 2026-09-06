@@ -32,4 +32,10 @@ registerLocale("zhs", {
   "ease.title": "缓动实验室",
   "ease.desc": "探索缓动曲线，并在可视化编辑器中创建多节点动画。",
   "ease.feat": "实时预览 · 独立变换控制 · 时间轴播放",
+
+  "anim.title": "Miliastra Animator",
+  "anim.desc":
+    "为 <code>.gia</code> 对象绑定骨骼并制作动画，预览运动效果，导出可在游戏中使用的动画。",
+  "anim.feat":
+    "骨骼与 IK · 关键帧编辑 · 动画导入与重定向",
 });

@@ -42,4 +42,10 @@ registerLocale("de", {
     "Erkunden Sie Beschleunigungskurven und erstellen Sie mehrpunktige Bewegungsabläufe in einem visuellen Editor.",
   "ease.feat":
     "Live-Vorschauen · unabhängige Transformationssteuerung · Zeitleistenwiedergabe",
+
+  "anim.title": "Miliastra Animator",
+  "anim.desc":
+    "Erstelle Rigs und Animationen für <code>.gia</code>-Objekte, sieh dir ihre Bewegungen an und exportiere Animationen für das Spiel.",
+  "anim.feat":
+    "Knochen &amp; IK · Keyframe-Bearbeitung · Animationsimport &amp; Retargeting",
 });

@@ -41,4 +41,10 @@ registerLocale("id", {
     "Jelajahi kurva easing dan buat gerakan multi-titik dalam editor visual.",
   "ease.feat":
     "Pratinjau langsung · kontrol transformasi independen · pemutaran linimasa",
+
+  "anim.title": "Miliastra Animator",
+  "anim.desc":
+    "Buat rig dan animasikan objek <code>.gia</code>, pratinjau gerakannya, lalu ekspor animasi untuk digunakan dalam game.",
+  "anim.feat":
+    "Tulang &amp; IK · pengeditan keyframe · impor &amp; retargeting animasi",
 });

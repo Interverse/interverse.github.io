@@ -42,4 +42,10 @@ registerLocale("es", {
     "Explora curvas de aceleración y crea movimientos de múltiples puntos en un editor visual.",
   "ease.feat":
     "Vistas previas en tiempo real · controles de transformación independientes · reproducción en la línea de tiempo",
+
+  "anim.title": "Miliastra Animator",
+  "anim.desc":
+    "Crea rigs y anima objetos <code>.gia</code>, previsualiza su movimiento y exporta animaciones para usarlas en el juego.",
+  "anim.feat":
+    "Huesos e IK · edición de fotogramas clave · importación y retargeting de animaciones",
 });

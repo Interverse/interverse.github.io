@@ -41,4 +41,10 @@ registerLocale("en", {
     "Explore easing curves and build multi-point motion in a visual editor.",
   "ease.feat":
     "Live previews · independent transform controls · timeline playback",
+
+  "anim.title": "Miliastra Animator",
+  "anim.desc":
+    "Rig and animate <code>.gia</code> objects, preview their motion, and export animations for use in-game.",
+  "anim.feat":
+    "Bones &amp; IK · keyframe editing · animation import &amp; retargeting",
 });

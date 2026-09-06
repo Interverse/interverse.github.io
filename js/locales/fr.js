@@ -42,4 +42,10 @@ registerLocale("fr", {
     "Explorez les courbes d’accélération et créez des mouvements multipoints dans un éditeur visuel.",
   "ease.feat":
     "Aperçus en direct · contrôles de transformation indépendants · lecture sur la chronologie",
+
+  "anim.title": "Miliastra Animator",
+  "anim.desc":
+    "Créez des rigs et animez des objets <code>.gia</code>, prévisualisez leurs mouvements et exportez les animations pour les utiliser en jeu.",
+  "anim.feat":
+    "Os et IK · édition des images clés · importation et reciblage d’animations",
 });

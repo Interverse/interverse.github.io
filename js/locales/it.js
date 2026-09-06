@@ -42,4 +42,10 @@ registerLocale("it", {
     "Esplora le curve di interpolazione e crea movimenti multipunto in un editor visuale.",
   "ease.feat":
     "Anteprime in tempo reale · controlli di trasformazione indipendenti · riproduzione della timeline",
+
+  "anim.title": "Miliastra Animator",
+  "anim.desc":
+    "Crea rig e anima oggetti <code>.gia</code>, visualizza i movimenti in anteprima ed esporta animazioni da usare nel gioco.",
+  "anim.feat":
+    "Ossa e IK · modifica dei fotogrammi chiave · importazione e retargeting delle animazioni",
 });

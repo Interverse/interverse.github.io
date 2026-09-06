@@ -14,6 +14,7 @@ Hosted at **https://interverse.github.io**.
 | Image to Primitive Shapes UI `.gia` | https://interverse.github.io/miliastra-image-to-primitive-shape-ui/ |
 | Image to `.gia` Pixel Builder       | https://interverse.github.io/miliastra-image-to-gia/                |
 | Ease Lab                            | https://interverse.github.io/easelab/                               |
+| Miliastra Animator                  | https://interverse.github.io/miliastra-animator/                    |
 
 ## Layout
 

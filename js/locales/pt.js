@@ -42,4 +42,10 @@ registerLocale("pt", {
     "Explore curvas de suavização e crie movimentos multiponto em um editor visual.",
   "ease.feat":
     "Pré-visualizações em tempo real · controles de transformação independentes · reprodução na linha do tempo",
+
+  "anim.title": "Miliastra Animator",
+  "anim.desc":
+    "Crie rigs e anime objetos <code>.gia</code>, visualize seus movimentos e exporte animações para usar no jogo.",
+  "anim.feat":
+    "Ossos e IK · edição de quadros-chave · importação e retargeting de animações",
 });

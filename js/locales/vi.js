@@ -41,4 +41,10 @@ registerLocale("vi", {
     "Khám phá các đường cong chuyển động và tạo chuyển động đa điểm trong trình chỉnh sửa trực quan.",
   "ease.feat":
     "Xem trước trực tiếp · điều khiển biến đổi độc lập · phát trên dòng thời gian",
+
+  "anim.title": "Miliastra Animator",
+  "anim.desc":
+    "Tạo rig và hoạt ảnh cho đối tượng <code>.gia</code>, xem trước chuyển động và xuất hoạt ảnh để sử dụng trong trò chơi.",
+  "anim.feat":
+    "Xương &amp; IK · chỉnh sửa khung hình chính · nhập &amp; chuyển hoạt ảnh sang rig khác",
 });

@@ -2,8 +2,9 @@ registerLocale("id", {
   "site.doc_title": "Miliastra Toolkit milik Kyvern",
   "site.title": '<span class="accent">Miliastra Toolkit</span> milik Kyvern',
   "site.subtitle":
-    "Kumpulan alat gratis berbasis browser untuk membuat, mengedit, dan mengonversi aset Miliastra Wonderland. Semuanya berjalan secara lokal — file kamu tidak pernah meninggalkan perangkat.",
+    "Alat gratis berbasis browser untuk mengolah aset Miliastra Wonderland. Semuanya berjalan secara lokal, jadi file kamu tetap di perangkatmu.",
   "open_tool": "Buka Alat",
+  "open_docs": "Buka Dokumentasi",
   "footer":
     "Toolkit tidak resmi buatan penggemar. Tidak berafiliasi dengan atau didukung oleh HoYoverse. Patuhi Ketentuan Layanan game saat menggunakan apa pun yang dibuat dengan alat ini.",
   "lang.label": "Bahasa",
@@ -11,40 +12,40 @@ registerLocale("id", {
   "m3d.title": "Model 3D &amp; Sprite ke <code>.gia</code>",
   "m3d.desc":
     "Ubah model 3D dan sprite 2D menjadi aset <code>.gia</code> siap pakai.",
-  "m3d.feat":
-    "Mode langsung / voxel / pixel-perfect · perangkat penyuntingan 3D lengkap · mendukung animasi 2D",
 
   "editor.title": "Editor Dekorasi <code>.gia</code>/<code>.gil</code>",
   "editor.desc":
     "Periksa, pisahkan, susun ulang, dan ganti nama model, level, serta dekorasi di dalam file <code>.gia</code> atau <code>.gil</code>.",
-  "editor.feat":
-    "Pisahkan dekorasi pada model/level · Pindahkan dekorasi antar model · susun ulang dengan seret dan lepas",
 
   "conv.title": "Konverter <code>.gia</code> Beyond ↔ Klasik",
   "conv.desc":
     "Pindahkan aset dengan bebas antara Mode Beyond dan Mode Klasik dalam sekali klik.",
-  "conv.feat": "Deteksi mode otomatis · konversi sekali klik ke dua arah",
 
   "prim.title": "Gambar ke UI Bentuk Dasar <code>.gia</code>",
   "prim.desc":
     "Ubah PNG menjadi file <code>.gia</code> yang tersusun dari lingkaran, persegi, atau segitiga.",
-  "prim.feat": "Gaya lukisan · jumlah bentuk lebih sedikit",
 
   "pixel.title": "Gambar Piksel ke UI <code>.gia</code>",
   "pixel.desc":
     "Ubah PNG menjadi file <code>.gia</code> yang tersusun dari elemen UI persegi.",
-  "pixel.feat":
-    "Pixel-perfect · pelapisan piksel cerdas · jumlah UI persegi lebih banyak",
 
   "ease.title": "Lab Easing",
   "ease.desc":
     "Jelajahi kurva easing dan buat gerakan multi-titik dalam editor visual.",
-  "ease.feat":
-    "Pratinjau langsung · kontrol transformasi independen · pemutaran linimasa",
 
   "anim.title": "Miliastra Animator",
   "anim.desc":
     "Buat rig dan animasikan objek <code>.gia</code>, pratinjau gerakannya, lalu ekspor animasi untuk digunakan dalam game.",
-  "anim.feat":
-    "Tulang &amp; IK · pengeditan keyframe · impor &amp; retargeting animasi",
+
+  /* section headings */
+  "group.create.title": "Buat Aset",
+  "group.create.desc": "Ubah model 3D, sprite, dan gambar menjadi file <code>.gia</code>.",
+  "group.edit.title": "Edit &amp; Konversi",
+  "group.edit.desc": "Periksa, animasikan, dan konversi aset <code>.gia</code> dan <code>.gil</code> yang sudah ada.",
+  "group.script.title": "Skrip Lua",
+  "group.script.desc": "Referensi dan alat bantu untuk menulis skrip Lua di Miliastra Wonderland.",
+
+  "lua.title": "Referensi API MiliLua",
+  "lua.desc":
+    "Referensi yang dapat dicari untuk API Lua klien Miliastra Wonderland: fungsi, properti, tipe, dan enum.",
 });

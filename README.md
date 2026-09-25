@@ -6,20 +6,36 @@ Hosted at **https://interverse.github.io**.
 
 ## Tools
 
+The homepage groups the tools into three sections. Ease Lab sits with the
+Lua docs because its easing curves are the client Lua API's `EaseType`s.
+
+**Create Assets**
+
 | Tool                                | Link                                                                |
 | ----------------------------------- | ------------------------------------------------------------------- |
 | 3D Models & Sprites to `.gia`       | https://interverse.github.io/miliastra-3d-model-to-gia              |
-| `.gia`/`.gil` Decoration Editor     | https://interverse.github.io/miliastra-decoration-splitter/         |
-| Beyond ↔ Classic Asset Converter    | https://interverse.github.io/miliastra-asset-mode-converter/        |
 | Image to Primitive Shapes UI `.gia` | https://interverse.github.io/miliastra-image-to-primitive-shape-ui/ |
-| Image to `.gia` Pixel Builder       | https://interverse.github.io/miliastra-image-to-gia/                |
-| Ease Lab                            | https://interverse.github.io/easelab/                               |
-| Miliastra Animator                  | https://interverse.github.io/miliastra-animator/                    |
+| Pixel Image to UI `.gia`            | https://interverse.github.io/miliastra-image-to-gia/                |
+
+**Edit & Convert**
+
+| Tool                             | Link                                                         |
+| -------------------------------- | ------------------------------------------------------------ |
+| `.gia`/`.gil` Decoration Editor  | https://interverse.github.io/miliastra-decoration-splitter/  |
+| Miliastra Animator               | https://interverse.github.io/miliastra-animator/             |
+| Beyond ↔ Classic Asset Converter | https://interverse.github.io/miliastra-asset-mode-converter/ |
+
+**Lua Scripting**
+
+| Tool                  | Link                                           |
+| --------------------- | ---------------------------------------------- |
+| MiliLua API Reference | https://interverse.github.io/miliastra-lua-docs/ |
+| Ease Lab              | https://interverse.github.io/easelab/          |
 
 ## Layout
 
 ```
-index.html       the landing page (header + tool cards)
+index.html       the landing page (header + categorized tool cards)
 css/style.css    homepage styles, matching the shared toolkit design language
 js/i18n.js       localization system + custom language selector
 js/locales/      one flat dictionary per language (en.js is the canonical set)

@@ -2,8 +2,9 @@ registerLocale("tr", {
   "site.doc_title": "Kyvern'in Bin Yıldız Diyarı Araç Seti",
   "site.title": "Kyvern'in <span class=\"accent\">Bin Yıldız Diyarı</span> Araç Seti",
   "site.subtitle":
-    "Bin Yıldız Diyarı varlıklarını oluşturmak, düzenlemek ve dönüştürmek için ücretsiz, tarayıcı tabanlı bir araç seti. Her şey yerel olarak çalışır — dosyalarınız cihazınızdan asla ayrılmaz.",
+    "Bin Yıldız Diyarı varlıklarıyla çalışmak için ücretsiz tarayıcı araçları. Her şey yerel olarak çalışır, dosyalarınız cihazınızda kalır.",
   "open_tool": "Aracı Aç",
+  "open_docs": "Belgeleri Aç",
   "footer":
     "Resmî olmayan, hayran yapımı bir araç setidir. HoYoverse ile bağlantılı değildir ve HoYoverse tarafından onaylanmamıştır. Bu araçlarla oluşturulan içerikleri kullanırken lütfen oyunun Hizmet Şartları'na uyun.",
   "lang.label": "Dil",
@@ -11,40 +12,40 @@ registerLocale("tr", {
   "m3d.title": "3D Modeller ve Sprite'lardan <code>.gia</code>",
   "m3d.desc":
     "3D modelleri ve 2D sprite'ları kullanıma hazır <code>.gia</code> varlıklarına dönüştürür.",
-  "m3d.feat":
-    "Doğrudan / voksel / piksel mükemmel modlar · eksiksiz 3D düzenleme araçları · 2D animasyon desteği",
 
   "editor.title": "<code>.gia</code>/<code>.gil</code> Dekorasyon Düzenleyici",
   "editor.desc":
     "Bir <code>.gia</code> veya <code>.gil</code> dosyasındaki modelleri, seviyeleri ve dekorasyonları inceleyin, bölün, yeniden sıralayın ve yeniden adlandırın.",
-  "editor.feat":
-    "Model/seviye üzerindeki dekorasyonları bölme · Dekorasyonları modeller arasında taşıma · sürükle-bırak ile sıralama",
 
   "conv.title": "Beyond ↔ Klasik <code>.gia</code> Dönüştürücü",
   "conv.desc":
     "Varlıkları Beyond Modu ile Klasik Mod arasında tek tıkla özgürce dönüştürün.",
-  "conv.feat": "Otomatik mod algılama · iki yönde tek tıkla dönüştürme",
 
   "prim.title": "Görselden Temel Şekilli UI <code>.gia</code>",
   "prim.desc":
     "Bir PNG'yi daire, kare veya üçgenlerden oluşan bir <code>.gia</code> dosyasına dönüştürür.",
-  "prim.feat": "Resimsi görünüm · daha az şekil sayısı",
 
   "pixel.title": "Piksel Görselden UI <code>.gia</code>",
   "pixel.desc":
     "Bir PNG'yi kare UI öğelerinden oluşan bir <code>.gia</code> dosyasına dönüştürür.",
-  "pixel.feat":
-    "Piksel mükemmelliği · akıllı piksel katmanları · daha fazla kare UI öğesi",
 
   "ease.title": "Yumuşatma Laboratuvarı",
   "ease.desc":
     "Yumuşatma eğrilerini keşfedin ve görsel bir düzenleyicide çok noktalı hareketler oluşturun.",
-  "ease.feat":
-    "Canlı önizlemeler · bağımsız dönüşüm kontrolleri · zaman çizelgesi oynatma",
 
   "anim.title": "Miliastra Animator",
   "anim.desc":
     "<code>.gia</code> nesnelerini rigleyip canlandırın, hareketlerini önizleyin ve animasyonları oyunda kullanmak üzere dışa aktarın.",
-  "anim.feat":
-    "Kemikler ve IK · anahtar kare düzenleme · animasyon içe aktarma ve yeniden hedefleme",
+
+  /* section headings */
+  "group.create.title": "Varlık Oluştur",
+  "group.create.desc": "3D modelleri, sprite'ları ve görselleri <code>.gia</code> dosyalarına dönüştürün.",
+  "group.edit.title": "Düzenle ve Dönüştür",
+  "group.edit.desc": "Mevcut <code>.gia</code> ve <code>.gil</code> varlıklarını inceleyin, canlandırın ve dönüştürün.",
+  "group.script.title": "Lua Betikleme",
+  "group.script.desc": "Bin Yıldız Diyarı için Lua betikleri yazmaya yönelik başvuru kaynakları ve yardımcı araçlar.",
+
+  "lua.title": "MiliLua API Başvurusu",
+  "lua.desc":
+    "Bin Yıldız Diyarı istemci Lua API'si için aranabilir bir başvuru kaynağı: fonksiyonlar, özellikler, türler ve enum'lar.",
 });

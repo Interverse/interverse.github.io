@@ -71,7 +71,7 @@ body {
 /* Thai stacked diacritics need extra line height to avoid clipping */
 :lang(th) .subtitle,
 :lang(th) .card .desc,
-:lang(th) .card .features,
+:lang(th) .group-desc,
 :lang(th) footer {
   line-height: 1.7;
 }
@@ -350,16 +350,16 @@ main {
 
 main {
   width: 100%;
-  max-width: 1360px;
+  max-width: 1160px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 }
 
 /* ----- header ----- */
 header {
   text-align: center;
-  margin-bottom: 44px;
+  margin-bottom: 40px;
 }
 header h1 {
   margin: 0 0 12px;
@@ -379,25 +379,75 @@ header .subtitle {
   color: #9aa3b0;
 }
 
-/* ----- tool cards ----- */
-.cards {
+/* ----- tool groups ----- */
+/* Tools are grouped into titled sections so the page keeps its structure as
+   more links are added. Each section owns a compact card grid. */
+.group {
+  width: 100%;
+}
+.group + .group {
+  margin-top: 36px;
+}
+.group-head {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  align-items: baseline;
+  gap: 4px 14px;
+  margin: 0 0 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #2a2e36;
+}
+.group-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 650;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #e6e9ee;
+}
+/* small accent bar in front of every section title */
+.group-title::before {
+  content: "";
+  flex: none;
+  width: 4px;
+  height: 15px;
+  border-radius: 2px;
+  background: #2d6cdf;
+}
+.group-title code {
+  font-family: inherit;
+  color: #7ec8ff;
+}
+.group-desc {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #8d97a7;
+}
+.group-desc code {
+  font-family: inherit;
+  color: #b7bec9;
+}
+
+/* ----- tool cards ----- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
   width: 100%;
 }
 
 .card {
   display: flex;
-  flex: 0 0 calc((100% - 40px) / 3);
-  max-width: 400px;
-  min-width: 280px;
   flex-direction: column;
+  min-width: 0;
   background: #1b1e24;
   border: 1px solid #2a2e36;
   border-radius: 12px;
-  padding: 26px 24px 22px;
+  padding: 18px 18px 16px;
   text-decoration: none;
   color: inherit;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
@@ -408,7 +458,7 @@ header .subtitle {
 }
 .card:hover,
 .card:focus-visible {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   border-color: #2d6cdf;
   box-shadow:
     0 10px 30px rgba(0, 0, 0, 0.45),
@@ -416,20 +466,27 @@ header .subtitle {
   outline: none;
 }
 
+/* icon + title share one row to keep the cards short */
+.card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
 .card .icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
+  flex: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 16px;
   background: rgba(45, 108, 223, 0.16);
   border: 1px solid rgba(45, 108, 223, 0.35);
 }
 .card .icon svg {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   stroke: #7ec8ff;
   fill: none;
   stroke-width: 1.7;
@@ -437,52 +494,54 @@ header .subtitle {
   stroke-linejoin: round;
 }
 
-.card h2 {
-  margin: 0 0 10px;
-  font-size: 17px;
-  line-height: 1.35;
+.card h3 {
+  margin: 0;
+  font-size: 15.5px;
+  line-height: 1.3;
   color: #e6e9ee;
   font-weight: 650;
 }
-.card h2 code {
+.card h3 code {
   font-family: inherit;
   color: #7ec8ff;
   font-weight: inherit;
 }
 .card .desc {
-  margin: 0 0 8px;
-  font-size: 13.5px;
-  line-height: 1.55;
+  margin: 0 0 16px;
+  font-size: 13px;
+  line-height: 1.5;
   color: #b7bec9;
 }
-.card .features {
-  margin: 0 0 18px;
-  font-size: 12px;
-  line-height: 1.6;
-  color: #6b7482;
-}
+/* compact pill link instead of a full-width button — lighter at scale, and
+   it fills with the accent color when the card is hovered/focused */
 .card .btn {
   margin-top: auto;
-  display: flex;
+  align-self: flex-start;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 7px;
-  padding: 10px 12px;
-  border-radius: 8px;
-  background: #2d6cdf;
-  color: #fff;
-  font-size: 14px;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(45, 108, 223, 0.14);
+  border: 1px solid rgba(45, 108, 223, 0.4);
+  color: #7ec8ff;
+  font-size: 12.5px;
   font-weight: 600;
-  letter-spacing: 0.3px;
-  transition: background 0.15s;
+  letter-spacing: 0.2px;
+  transition:
+    background 0.15s,
+    color 0.15s,
+    border-color 0.15s;
 }
 .card:hover .btn,
 .card:focus-visible .btn {
-  background: #3d7ceb;
+  background: #2d6cdf;
+  border-color: #2d6cdf;
+  color: #fff;
 }
 .card .btn svg {
-  width: 14px;
-  height: 14px;
+  width: 13px;
+  height: 13px;
   stroke: currentColor;
   fill: none;
   stroke-width: 2;
@@ -496,9 +555,9 @@ header .subtitle {
 
 /* ----- footer ----- */
 footer {
-  margin-top: 44px;
-  font-size: 11px;
-  color: #6b7482;
+  margin: 44px auto 0;
+  font-size: 11.5px;
+  color: #8d97a7;
   text-align: center;
   line-height: 1.6;
   max-width: 640px;
@@ -512,12 +571,10 @@ footer a:hover {
 }
 
 /* ----- responsive ----- */
-/* cards balance into rows on narrower screens and stack on phones */
-@media (max-width: 1180px) {
+/* three columns on desktop, two on tablets, one on phones */
+@media (max-width: 1000px) {
   .cards {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 720px;
-    margin: 0 auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 /* clear space under the fixed language selector so it can never sit on top
@@ -532,10 +589,12 @@ footer a:hover {
     padding: 72px 16px 32px;
   }
   header {
-    margin-bottom: 32px;
+    margin-bottom: 28px;
+  }
+  .group + .group {
+    margin-top: 28px;
   }
   .cards {
     grid-template-columns: 1fr;
-    max-width: none;
   }
 }

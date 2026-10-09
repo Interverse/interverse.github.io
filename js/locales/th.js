@@ -48,4 +48,8 @@ registerLocale("th", {
   "lua.title": "เอกสารอ้างอิง MiliLua API",
   "lua.desc":
     "เอกสารอ้างอิง Lua API ฝั่งไคลเอนต์ของแดนอัศจรรย์พันดาราที่ค้นหาได้: ฟังก์ชัน พร็อพเพอร์ตี ชนิดข้อมูล และ enum",
+
+  "uiConv.title": "ตัวแปลง UI Server &harr; Client",
+  "uiConv.desc":
+    "แปลงเทมเพลต UI ระหว่างรูปแบบ <code>.gia</code> ของ Server และ Client",
 });

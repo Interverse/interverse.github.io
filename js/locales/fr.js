@@ -48,4 +48,8 @@ registerLocale("fr", {
   "lua.title": "Référence de l'API MiliLua",
   "lua.desc":
     "Une référence consultable de l'API Lua du client Paradisia milliastral : fonctions, propriétés, types et énumérations.",
+
+  "uiConv.title": "Convertisseur d’UI Server &harr; Client",
+  "uiConv.desc":
+    "Convertissez des modèles d’UI entre les formats <code>.gia</code> Server et Client.",
 });

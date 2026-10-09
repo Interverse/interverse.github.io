@@ -48,4 +48,8 @@ registerLocale("tr", {
   "lua.title": "MiliLua API Başvurusu",
   "lua.desc":
     "Bin Yıldız Diyarı istemci Lua API'si için aranabilir bir başvuru kaynağı: fonksiyonlar, özellikler, türler ve enum'lar.",
+
+  "uiConv.title": "Server &harr; Client UI Dönüştürücü",
+  "uiConv.desc":
+    "UI şablonlarını Server ve Client <code>.gia</code> biçimleri arasında dönüştürün.",
 });

@@ -48,4 +48,8 @@ registerLocale("pt", {
   "lua.title": "Referência da API MiliLua",
   "lua.desc":
     "Uma referência pesquisável da API Lua do cliente do Miliastra Arcanum: funções, propriedades, tipos e enums.",
+
+  "uiConv.title": "Conversor de UI Server &harr; Client",
+  "uiConv.desc":
+    "Converta modelos de UI entre os formatos <code>.gia</code> Server e Client.",
 });

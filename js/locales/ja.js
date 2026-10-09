@@ -47,4 +47,8 @@ registerLocale("ja", {
 
   "lua.title": "MiliLua API リファレンス",
   "lua.desc": "星々の幻境クライアント Lua API の検索可能なリファレンス。関数・プロパティ・型・列挙型を収録。",
+
+  "uiConv.title": "サーバー &harr; クライアント UI 変換",
+  "uiConv.desc":
+    "UIテンプレートをサーバーとクライアントの <code>.gia</code> 形式間で変換します。",
 });

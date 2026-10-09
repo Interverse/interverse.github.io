@@ -42,4 +42,8 @@ registerLocale("zhs", {
 
   "lua.title": "MiliLua API 参考",
   "lua.desc": "可搜索的千星奇域客户端 Lua API 参考：函数、属性、类型与枚举。",
+
+  "uiConv.title": "服务端 &harr; 客户端 UI 转换器",
+  "uiConv.desc":
+    "在服务端与客户端 <code>.gia</code> 格式之间转换 UI 模板。",
 });

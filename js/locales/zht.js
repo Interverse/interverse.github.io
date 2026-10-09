@@ -42,4 +42,8 @@ registerLocale("zht", {
 
   "lua.title": "MiliLua API 參考",
   "lua.desc": "可搜尋的千星奇域用戶端 Lua API 參考：函式、屬性、型別與列舉。",
+
+  "uiConv.title": "伺服器端 &harr; 用戶端 UI 轉換器",
+  "uiConv.desc":
+    "在伺服器端與用戶端 <code>.gia</code> 格式之間轉換 UI 範本。",
 });

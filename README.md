@@ -24,6 +24,7 @@ Lua docs because its easing curves are the client Lua API's `EaseType`s.
 | `.gia`/`.gil` Decoration Editor  | https://interverse.github.io/miliastra-decoration-splitter/  |
 | Miliastra Animator               | https://interverse.github.io/miliastra-animator/             |
 | Beyond ↔ Classic Asset Converter | https://interverse.github.io/miliastra-asset-mode-converter/ |
+| Server ↔ Client UI Converter     | https://interverse.github.io/miliastra-server-client-ui-converter/ |
 
 **Lua Scripting**
 

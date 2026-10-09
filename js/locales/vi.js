@@ -48,4 +48,8 @@ registerLocale("vi", {
   "lua.title": "Tài liệu tham khảo API MiliLua",
   "lua.desc":
     "Tài liệu tham khảo có thể tìm kiếm cho Lua API phía client của Thiên Tinh Kỳ Vực: hàm, thuộc tính, kiểu dữ liệu và enum.",
+
+  "uiConv.title": "Chuyển đổi UI Server &harr; Client",
+  "uiConv.desc":
+    "Chuyển đổi mẫu UI giữa định dạng <code>.gia</code> Server và Client.",
 });

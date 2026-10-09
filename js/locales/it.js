@@ -48,4 +48,8 @@ registerLocale("it", {
   "lua.title": "Riferimento API MiliLua",
   "lua.desc":
     "Un riferimento consultabile per l'API Lua del client di Miliastra Mirabilia: funzioni, proprietà, tipi ed enumerazioni.",
+
+  "uiConv.title": "Convertitore UI Server &harr; Client",
+  "uiConv.desc":
+    "Converti modelli UI tra i formati <code>.gia</code> Server e Client.",
 });

@@ -48,4 +48,8 @@ registerLocale("es", {
   "lua.title": "Referencia de la API MiliLua",
   "lua.desc":
     "Una referencia con buscador de la API Lua del cliente del Edén Miliastra: funciones, propiedades, tipos y enumeraciones.",
+
+  "uiConv.title": "Conversor de UI Server &harr; Client",
+  "uiConv.desc":
+    "Convierte plantillas de UI entre formatos <code>.gia</code> Server y Client.",
 });

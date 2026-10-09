@@ -48,4 +48,8 @@ registerLocale("ru", {
   "lua.title": "Справочник по API MiliLua",
   "lua.desc":
     "Справочник с поиском по Lua API клиента Астрального предела: функции, свойства, типы и перечисления.",
+
+  "uiConv.title": "Конвертер UI Server &harr; Client",
+  "uiConv.desc":
+    "Преобразуйте шаблоны UI между форматами <code>.gia</code> Server и Client.",
 });

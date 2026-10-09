@@ -47,4 +47,8 @@ registerLocale("ko", {
 
   "lua.title": "MiliLua API 레퍼런스",
   "lua.desc": "별바다 세계 클라이언트 Lua API를 검색할 수 있는 레퍼런스: 함수, 속성, 타입, 열거형.",
+
+  "uiConv.title": "서버 &harr; 클라이언트 UI 변환기",
+  "uiConv.desc":
+    "UI 템플릿을 서버와 클라이언트 <code>.gia</code> 형식 간에 변환하세요.",
 });

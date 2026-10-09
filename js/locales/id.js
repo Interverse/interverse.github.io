@@ -48,4 +48,8 @@ registerLocale("id", {
   "lua.title": "Referensi API MiliLua",
   "lua.desc":
     "Referensi yang dapat dicari untuk API Lua klien Miliastra Wonderland: fungsi, properti, tipe, dan enum.",
+
+  "uiConv.title": "Konverter UI Server &harr; Client",
+  "uiConv.desc":
+    "Konversi templat UI antara format <code>.gia</code> Server dan Client.",
 });

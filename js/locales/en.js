@@ -48,4 +48,8 @@ registerLocale("en", {
   "lua.title": "MiliLua API Reference",
   "lua.desc":
     "A searchable reference for the Miliastra Wonderland client Lua API: functions, properties, types, and enums.",
+
+  "uiConv.title": "Server &harr; Client UI Converter",
+  "uiConv.desc":
+    "Convert UI templates between Server and Client <code>.gia</code> formats.",
 });
